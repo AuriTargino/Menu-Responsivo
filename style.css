@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./img/fotobody.png);
+}
+nav ul li a{
+  color: #f2f2f2;
+  border-radius: 5px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 8px 15px;
+  transition: all 0.4s ease;
+}
+div i{
+  color: white; 
+}
+nav div img{
+  width: 100px;
+  border: 1px solid yellow;
+  border-radius: 50%;
+}
+nav div p{
+  font-size: 15px;
+  text-align: center;
+  color: yellowgreen;
+}
+nav{
+  display: flex;
+  height: 130px;
+  width: 100%;
+  background-color: #01282e;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+.logo{
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  list-style: none;
+  gap:3.5rem;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+nav ul li a.active,
+nav ul li a:hover{
+  background:rgb(238, 146, 9);
+  padding: 4px;
+  border: 1px solid green;
+}
+nav .menu-btn i{
+  display: none;
+}
+@media (max-width: 920px){
+  nav .menu-btn i{
+    display: block;
+  }
+  nav ul{
+    position: fixed;
+    top: 130px;
+    left: -100vh; 
+    text-align: center;
+    display: block;
+    transition: all 0.4s ease;
+  }
+   nav ul.open{
+      left: 0;
+      
+   }
+   nav ul li{
+    width: 80%;
+    margin: 50px;
+   }
+   nav ul li a{
+    font-size: 25px;
+    
+   }
+   nav ul li a.active,
+   nav ul li a:hover{
+  background:rgb(112, 92, 3);
+  border-radius: 5px;
+  color:white;
+  
+}
+
+}
